@@ -1,0 +1,24 @@
+[project]
+name = 'reputation-dao'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.reputation-dao]
+path = 'contracts/reputation-dao.clar'
+clarity_version = 3
+epoch = 'latest'
+[repl.analysis]
+passes = []
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+unchecked_data = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
